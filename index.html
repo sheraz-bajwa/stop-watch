@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container py-5">
+        
+        <header class="text-center">
+            <h1 class="display-4 mb-4">Bajwa Countdown</h1>
+            
+        </header>
+    
+    
+        <div class="py-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+    
+                   
+    
+                   
+                    <div class="rounded bg-gradient-4 text-white shadow p-5 text-center mb-5">
+                        <p class="mb-0 font-weight-bold text-uppercase">Don't work hard; work smart</p>
+                        <div id="clock-c" class="countdown py-4">
+                            <div class="one">
+                                <h1 id="min" class="list-inline-item pt-4">0</h1>
+
+                                <h1 id="sec"class="list-inline-item pt-2">0</h1>
+
+                                <h1 id="msec"class="list-inline-item pt-2">0</h1>
+                                
+                                
+                            </div>
+                        </div>
+    
+                       
+                        <ul class="list-inline">
+                            <li class="list-inline-item pt-2">
+                                <button this.disabled = true onclick="start()" id="btn-reset" type="button" class="btn btn-demo"><i class="glyphicon glyphicon-repeat"></i>Start</button>
+                            </li>
+                            <li class="list-inline-item pt-2">
+                                <button onclick="reset()" id="btn-reset" type="button" class="btn btn-demo"><i class="glyphicon glyphicon-repeat"></i>Reset</button>
+                            </li>
+                            <li class="list-inline-item pt-2">
+                                <button onclick="stop()" id="btn-pause" type="button" class="btn btn-demo"><i class="glyphicon glyphicon-repeat"></i>Pause</button>
+                            </li>
+                            <li class="list-inline-item pt-2">
+                                <button onclick="resume()" id="btn-resume" type="button" class="btn btn-demo"><i class="glyphicon glyphicon-repeat"></i>Resume</button>
+                            </li>
+                        </ul>
+    
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="app.js"></script>
+</html>
